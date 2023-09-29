@@ -1,0 +1,64 @@
+/* Container for the toggle switch */
+.toggle-switch {
+  display: inline-block;
+  position: relative;
+  width: 40px; /* Adjust the width to make it smaller */
+  height: 20px; /* Adjust the height to make it smaller */
+}
+
+/* Hidden checkbox input */
+.toggle-checkbox {
+  display: none;
+}
+
+/* The switch label (slider) */
+.toggle-label {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc; /* Background color of the switch when it's off */
+  border-radius: 20px; /* Adjust the border radius to match the height */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+/* The inner part of the switch (white) */
+.toggle-inner {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 50%;
+  height: 16px; /* Adjust the height to make it smaller */
+  background-color: white; /* Background color when it's on */
+  border-radius: 16px; /* Adjust the border radius to match the height */
+  transition: transform 0.3s; /* Smooth slide animation */
+}
+
+/* The circle knob of the switch */
+.toggle-switch-circle {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 12px; /* Adjust the width and height to make it smaller */
+  height: 12px; /* Adjust the width and height to make it smaller */
+  background-color: #fff;
+  border-radius: 50%; /* Make it round */
+  transition: transform 0.3s; /* Smooth slide animation */
+}
+
+/* Style the switch when it's checked (on) */
+.toggle-checkbox:checked + .toggle-label {
+  padding: 0 4px;
+  background-color: #120B48; /* Background color when it's on */
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+  transform: translateX(20px); /* Move the inner part to the right */
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-switch-circle {
+  transform: translateX(20px); /* Move the circle knob to the right */
+}
+
+

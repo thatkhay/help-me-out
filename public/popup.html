@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="popup.css">
         <title>Help Me Out</title>
     </head>
-    <body style="padding: 0 1rem;  width: 13rem;">
+    <body style="padding: 0 1rem 1rem 1.4rem;  width: 13rem; border-radius: 1rem;">
       <header style="display: flex; align-items: center; justify-content: space-between; width: 13rem; ">
         <div class="logoDiv" style="display: flex; align-items: center; justify-content: space-between; width: 50%;"> 
             <img class="logo" src="./icon.png" alt="icon" style="height: 1.3rem; width: 1.3rem;">  
@@ -21,7 +21,7 @@
        
       </header> 
       <p style="width: 90%; font-size: .8rem; text-align: left; color: #413C6D; margin-top: -.1rem;">This extention helps you record and help share videos with ease .</p> 
-        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2rem; padding: 0 2rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 2rem; padding: 0 1.6rem;">
       <div style="display: flex; align-items: center; flex-direction: column;">
         <img src="./monitor.png" alt="monitor">
         <p style="color:#120B48 ; font-weight: 700;">Full screen</p>
@@ -31,5 +31,34 @@
         <p style="color:#120B48 ; font-weight: 700;">Current Tab</p>
       </div>
         </div>
+<div style="display: flex; flex-direction: column; align-items: center; width: 13rem; margin-top: .5rem;"> 
+        <div style="display: flex; align-items: center; border: #120B48 solid 1px; padding: .1rem .7rem; border-radius: .5rem; margin-bottom: 1.2rem; width: 90%; justify-content: space-between;">
+
+          <img src="./video-camera.png" alt="">
+<p style="color:#120B48 ; font-weight: 700; margin-left: -4rem;">Camera</p>
+
+        <div class="toggle-switch" >
+  <input type="checkbox" id="toggle" class="toggle-checkbox">
+  <label for="toggle" class="toggle-label">
+    <div class="toggle-inner"></div>
+    <div class="toggle-switch-circle"></div>
+  </label>
+</div>
+        </div>
+
+        <div style="display: flex; align-items: center; border: #120B48 solid 1px; padding: .1rem .7rem; border-radius: .5rem; margin-bottom: 1.4rem;  width: 90%; justify-content: space-between;">
+          <img src="./mic.png" alt="">
+   <p style="color:#120B48 ; font-weight: 700; margin-left: -4rem;" > Audio</p>
+  <div class="toggle-switch toggle-switch2">
+    <input type="checkbox" id="toggle2" class="toggle-checkbox">
+    <label for="toggle2" class="toggle-label toggle-label2">
+      <div class="toggle-inner toggle-inner2"></div>
+      <div class="toggle-switch-circle toggle-switch-circle2"></div>
+    </label>
+  </div>
+ 
+</div>
+<button style=" width: 100%; background-color: #120B48; padding: .7rem 0; color: white; border-radius: .4rem;">Start Recording</button>
+</div>
     </body>
     </html>
