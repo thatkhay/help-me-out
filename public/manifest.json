@@ -3,7 +3,7 @@
   "name": "Screen Recording Extension",
   "version": "1.0",
   "description": "Record your screen",
-  "permissions": ["activeTab", "desktopCapture", "scripting"],
+  "permissions": ["activeTab", "desktopCapture", "scripting", "tabs"],
   "action": {
     "default_popup": "popup.html", 
     "default_icon": {
@@ -13,8 +13,8 @@
     }
   },
   "background": {
-    "service_worker": "service_worker.js",
-    "type": "module"
+    "service_worker": "backgroung.js"
+   
   },
   "icons": {
     "16": "icon.png",
