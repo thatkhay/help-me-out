@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 document.addEventListener("DOMContentLoaded", ()=>{
     // GET THE SELECTORS OF THE BUTTONS
     const startVideoButton = document.querySelector("#startRecordingButton")
