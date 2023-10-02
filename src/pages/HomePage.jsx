@@ -5,14 +5,18 @@ import heroSec from '../images/herosection.png'
 import content from '../images/content.png'
 import frame from '../images/fram.png'
 import footer from '../images/footer.png'
+import { Link } from 'react-router-dom'
 const HomePage = () => {
   return (
     <div>
         <header style={{display: 'flex', alignItems: 'center', color: '#120B48', justifyContent:'space-around', boxShadow: '1px 3px 9px rgba(0, 0, 0, 0.2)', height: '5rem'}} >
-            <div style={{display: 'flex', alignItems: 'center', color: '#120B48'}}>
+         
+                 <Link to="/" style={{textDecoration: 'none',display: 'flex', alignItems: 'center', color: '#120B48'}}>
 <img src={Logo} alt="logo" style={{height: '2rem', width: '2rem', marginRight: '.4rem'}} />
-<h3>HelpMeOut</h3>
-            </div>
+<h3 style={{color: '#120B48'}}>HelpMeOut</h3>
+                 </Link>
+
+          
             <div style={{display: 'flex', alignItems: 'center', color: '#120B48', fontWeight: '700'}}>
                 <p style={{marginRight: '2.5rem'}}>Features</p>
                 <p>How it Works</p>
