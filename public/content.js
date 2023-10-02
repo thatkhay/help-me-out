@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 console.log("Hi, I have been injected whoopie!!!")
 
 var recorder = null
