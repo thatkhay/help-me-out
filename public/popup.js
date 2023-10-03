@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             chrome.tabs.sendMessage(tabs[0].id, {action: "stopvideo"},  function(response){
                 if(!chrome.runtime.lastError){
                     console.log(response)
+                    chrome.tabs.update({ url: "https://help-me-out-pi.vercel.app/" });
                 } else{
                     console.log(chrome.runtime.lastError, 'error line 27')
                 }

@@ -18,10 +18,16 @@ const HomePage = () => {
 
           
             <div style={{display: 'flex', alignItems: 'center', color: '#120B48', fontWeight: '700'}}>
-                <p style={{marginRight: '2.5rem'}}>Features</p>
-                <p>How it Works</p>
+                <Link to='/log-in' style={{textDecoration: 'none'}}> <p style={{marginRight: '2.5rem'}}>Features</p> </Link>
+               
+                <Link to='/log-in' style={{textDecoration: 'none'}}> <p>How it Works</p> </Link>
+               
             </div>
+
+            <Link to='/log-in' style={{textDecoration: 'none'}}> 
             <p style={{ color: '#120B48', fontWeight: '700'}}>Get Started</p>
+            </Link>
+            
         </header>
         <Container style={{marginTop: '2rem'}}>
             <img src={heroSec} alt="" style={{height: '100%', width: '100%'}} />
